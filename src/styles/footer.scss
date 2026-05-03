@@ -1,53 +1,135 @@
 @import "colors.scss";
-footer{
-    background-color: $first;
-    height: 200px;
-    width:100%;
-    color: $dark;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    padding: 2rem;
 
-    >div{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin-left: -100px;
+footer {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(76, 230, 208, 0.12), transparent 20rem),
+    $charcoal;
+  color: $ink;
+  padding: 0 5vw 2rem;
 
-        >h1{
-            font: 700 2rem $text1;
-            text-transform: uppercase;
-            color: $third;
-            margin-left: -650px ;
-            margin-top: 20px;
-        }
+  .footer-cta {
+    align-items: center;
+    background: linear-gradient(135deg, $teal, $coral);
+    border-radius: $radius;
+    color: $ink;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 1.4rem;
+    position: relative;
+    top: -2.2rem;
 
-        >p{
-            font: 500 1.2rem $text1;
-            margin-left: -650px;
-            margin-top: 5px;
-        }
+    span {
+      color: $tealDark;
+      font-size: 0.78rem;
+      font-weight: 900;
+      text-transform: uppercase;
     }
 
-    >div{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         >h5{
-            font: 300 2rem $text1;
-            margin: 1rem 0;
-            text-align: center;
-         }
-            
-         >a{
-            color: $dark;
-            font: 900 1rem $text2;
-            &:hover{
-                 color: $third;
-            }
-         }
-    }            
-       
-    
+    h2 {
+      font-size: clamp(1.55rem, 3vw, 2.4rem);
+      line-height: 1.08;
+      margin-top: 0.3rem;
+    }
+
+    a {
+      align-items: center;
+      background: $charcoal;
+      border-radius: 999px;
+      color: $ink;
+      display: inline-flex;
+      font-weight: 900;
+      gap: 0.5rem;
+      min-height: 3rem;
+      padding: 0.85rem 1rem;
+      white-space: nowrap;
+    }
+  }
+
+  .footer-main {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1.4fr 0.55fr 0.55fr 0.7fr;
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 1rem 0 2.4rem;
+  }
+
+  .footer-brand img {
+    height: 4rem;
+    margin-bottom: 1rem;
+    width: auto;
+  }
+
+  p {
+    color: rgba(247, 247, 242, 0.66);
+    line-height: 1.7;
+    max-width: 460px;
+  }
+
+  .footer-brand span {
+    align-items: center;
+    color: rgba(247, 247, 242, 0.76);
+    display: inline-flex;
+    font-weight: 800;
+    gap: 0.55rem;
+    margin-top: 1.2rem;
+
+    svg {
+      color: $teal;
+    }
+  }
+
+  h5 {
+    color: $ink;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: rgba(247, 247, 242, 0.7);
+    font-weight: 700;
+    transition: 0.2s ease;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+
+  .footer-links {
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .footer-social {
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+
+    h5 {
+      flex-basis: 100%;
+    }
+
+    a {
+      align-items: center;
+      border: 1px solid rgba(247, 247, 242, 0.14);
+      border-radius: 8px;
+      display: inline-flex;
+      height: 2.5rem;
+      justify-content: center;
+      width: 2.5rem;
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(247, 247, 242, 0.1);
+    color: rgba(247, 247, 242, 0.56);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1180px;
+    padding-top: 1.2rem;
+  }
 }

@@ -1,95 +1,226 @@
-@media screen and (max-width: 820px) {
-    .home3 {
-      height: 130vh;
-      > div {
-        height: 120vh;
-      }
-    }
-  
-    .contact > main {
-      height: 100vh;
-      width: 100%;
-      border-radius: 0%;
-      h1 {
-        text-align: center;
-      }
-    }
-  }
-  
-  @media screen and (max-width: 700px) {
-    nav {
-      > h1 {
-        display: none;
-      }
-      > main {
-        width: 100%;
-        justify-content: center;
-        a {
-          margin: 0.5rem;
-        }
-      }
-    }
-  
-    .home > main {
-      align-items: center;
-      h1 {
-        font-size: 3rem;
-      }
-    }
-  
-    .home2 {
-      height: 120vh;
+@media screen and (max-width: 980px) {
+  nav {
+    align-items: center;
+    flex-direction: row;
+
+    > main {
+      align-items: stretch;
+      background: rgba(9, 10, 13, 0.98);
+      border-radius: 24px;
+      box-shadow: 0 22px 70px rgba(0, 0, 0, 0.44);
+      display: none;
       flex-direction: column;
-      img {
-        width: 100%;
+      gap: 0.35rem;
+      left: 1rem;
+      padding: 0.8rem;
+      position: absolute;
+      right: 1rem;
+      top: calc(100% + 0.65rem);
+      width: auto;
+
+      &.open {
+        display: flex;
       }
-      > div {
+
+      > a {
+        border-radius: 14px;
+        justify-content: flex-start;
         width: 100%;
       }
     }
-  
-    .home3 {
-      height: 120vh;
-      > div {
-        text-align: center;
+
+    .menu-toggle {
+      display: inline-flex;
+    }
+  }
+
+  .home,
+  .page-hero,
+  .home2,
+  .home3,
+  .contact,
+  .deliverables,
+  .learning-path,
+  .fit-finder,
+  .advantage-section,
+  .feature-showcase,
+  .story-band,
+  .milestone-panel,
+  .faq-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .home {
+    padding-top: 4rem;
+  }
+
+  .home3 img,
+  .services-hero img {
+    min-height: 320px;
+  }
+
+  .service-grid,
+  .program-grid,
+  .principle-grid,
+  .outcome-grid,
+  .resource-grid,
+  .showcase-grid,
+  .home4 > div > article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid,
+  .testimonial-grid,
+  .pathway-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid article.featured {
+    transform: none;
+  }
+
+  .contact .contact-intro {
+    position: static;
+  }
+
+  footer {
+    .footer-main {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-cta,
+    .footer-bottom {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.6rem 1rem;
+  }
+
+  nav {
+    padding: 0.75rem 1rem;
+
+    .brand img {
+      height: 2.75rem;
+    }
+
+    > main {
+      > a {
+        font-size: 0.92rem;
+        padding: 0.72rem 0.8rem;
+      }
+
+      .nav-cta {
+        margin-left: 0;
         width: 100%;
-        border-radius: 0;
-        > p {
-          padding: 5rem 2rem;
-          font-size: 0.9rem;
-          line-height: 150%;
-        }
-      }
-    }
-  
-    .home4 {
-      align-items: center;
-      > div {
-        border-radius: 0%;
-        width: 100%;
-        height: unset;
-      }
-    }
-  
-    .contact > main {
-      padding: 1rem;
-      h1 {
-        margin: 1rem;
-      }
-      > form {
-        margin: 0%;
-        > div {
-          width: 100%;
-        }
-      }
-    }
-  
-    footer {
-      height: 50vh;
-      grid-template-columns: 1fr;
-      padding: 5rem;
-      > div {
-        align-items: center;
       }
     }
   }
+
+  .home {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 3rem 1rem;
+
+    .metric-stack {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .kinetic-scene {
+    min-height: 430px;
+  }
+
+  .kinetic-scene.page {
+    min-height: 320px;
+  }
+
+  .hero-actions,
+  .home5,
+  .cta-band {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .home2,
+  .home3,
+  .home4,
+  .home5,
+  .section-shell,
+  .page-hero,
+  .contact {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .home2 .check-list,
+  .service-grid,
+  .program-grid,
+  .principle-grid,
+  .outcome-grid,
+  .resource-grid,
+  .showcase-grid,
+  .proof-strip,
+  .mock-grid,
+  .quiz-options,
+  .home4 > div > article {
+    grid-template-columns: 1fr;
+  }
+
+  .home4 > div > article > div,
+  .service-card,
+  .program-card {
+    min-height: auto;
+  }
+
+  .contact {
+    padding-top: 3rem;
+  }
+
+  footer {
+    padding: 2.2rem 1rem;
+
+    .footer-main {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-cta {
+      top: -1rem;
+
+      a {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+
+  .team-note,
+  .quote-panel,
+  .pricing-note,
+  .demo-room {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .comparison-list article {
+    grid-template-columns: 1fr;
+
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}

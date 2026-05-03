@@ -1,0 +1,220 @@
+@import "colors.scss";
+
+.kinetic-scene {
+  min-height: 560px;
+  overflow: hidden;
+  perspective: 1200px;
+  position: relative;
+
+  &::before {
+    background:
+      radial-gradient(circle, rgba(214, 255, 50, 0.24), transparent 36%),
+      radial-gradient(circle at 70% 34%, rgba(255, 61, 242, 0.18), transparent 30%);
+    content: "";
+    filter: blur(18px);
+    inset: 8%;
+    position: absolute;
+  }
+}
+
+.orbital-stage {
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotateX(58deg) rotateZ(-18deg);
+  transform-style: preserve-3d;
+  width: min(560px, 92vw);
+}
+
+.core-cube {
+  animation: cubeSpin 12s linear infinite;
+  height: 146px;
+  left: calc(50% - 73px);
+  position: absolute;
+  top: calc(50% - 73px);
+  transform-style: preserve-3d;
+  width: 146px;
+
+  span {
+    background: linear-gradient(145deg, rgba(214, 255, 50, 0.92), rgba(142, 108, 255, 0.88));
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    border-radius: 28px;
+    box-shadow: 0 0 50px rgba(214, 255, 50, 0.25);
+    inset: 0;
+    position: absolute;
+
+    &:nth-child(1) {
+      transform: translateZ(73px);
+    }
+
+    &:nth-child(2) {
+      transform: rotateY(90deg) translateZ(73px);
+    }
+
+    &:nth-child(3) {
+      transform: rotateX(90deg) translateZ(73px);
+    }
+  }
+}
+
+.orbit {
+  border: 2px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  inset: 13%;
+  position: absolute;
+  transform-style: preserve-3d;
+
+  i {
+    background: $coral;
+    border-radius: 50%;
+    box-shadow: 0 0 28px $coral;
+    display: block;
+    height: 18px;
+    left: 50%;
+    position: absolute;
+    top: -9px;
+    width: 18px;
+  }
+}
+
+.orbit-a {
+  animation: orbitTurn 9s linear infinite;
+}
+
+.orbit-b {
+  animation: orbitTurn 12s linear infinite reverse;
+  inset: 20%;
+  transform: rotateX(34deg);
+}
+
+.orbit-c {
+  animation: orbitTurn 15s linear infinite;
+  inset: 6%;
+  transform: rotateY(44deg);
+}
+
+.float-card {
+  animation: cardFloat 5s ease-in-out infinite;
+  background: rgba(21, 16, 33, 0.82);
+  border: 1px solid $line;
+  border-radius: 20px;
+  box-shadow: $softShadow;
+  color: $ink;
+  padding: 0.9rem 1rem;
+  position: absolute;
+  transform: rotateX(-58deg) rotateZ(18deg);
+
+  strong,
+  small {
+    display: block;
+  }
+
+  small {
+    color: $muted;
+    font-weight: 800;
+    margin-top: 0.2rem;
+    text-transform: uppercase;
+  }
+}
+
+.card-a {
+  left: 2%;
+  top: 28%;
+}
+
+.card-b {
+  animation-delay: -1.2s;
+  right: 0;
+  top: 34%;
+}
+
+.card-c {
+  animation-delay: -2.2s;
+  bottom: 14%;
+  left: 36%;
+}
+
+.motion-svg {
+  inset: auto 0 0;
+  opacity: 0.72;
+  position: absolute;
+  width: 100%;
+
+  .wave {
+    fill: none;
+    stroke-dasharray: 22 18;
+    stroke-linecap: round;
+    stroke-width: 4;
+  }
+
+  .wave-a {
+    animation: dashFlow 8s linear infinite;
+  }
+
+  .wave-b {
+    animation: dashFlow 10s linear infinite reverse;
+    opacity: 0.62;
+  }
+
+  .node-system circle {
+    fill: $teal;
+    filter: drop-shadow(0 0 8px $teal);
+  }
+
+  .scanner rect {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.14);
+    stroke-width: 2;
+  }
+}
+
+.kinetic-scene.page {
+  margin: 2.4rem auto 0;
+  max-width: 780px;
+  min-height: 420px;
+
+  .orbital-stage {
+    width: min(420px, 80vw);
+  }
+}
+
+@keyframes cubeSpin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes orbitTurn {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes cardFloat {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -16px;
+  }
+}
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -240;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .core-cube,
+  .orbit,
+  .float-card,
+  .motion-svg .wave {
+    animation: none;
+  }
+}
