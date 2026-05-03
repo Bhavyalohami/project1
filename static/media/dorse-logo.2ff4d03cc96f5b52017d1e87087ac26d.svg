@@ -1,0 +1,11 @@
+<svg width="220" height="64" viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="64" rx="18" fill="#090A0D"/>
+  <path d="M30 17H19V28" stroke="#D6FF32" stroke-width="5" stroke-linecap="round"/>
+  <path d="M19 36V47H30" stroke="#D6FF32" stroke-width="5" stroke-linecap="round"/>
+  <path d="M48 17H59V28" stroke="#FF3DF2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M59 36V47H48" stroke="#FF3DF2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M36 20H43C48.8 20 53.5 24.7 53.5 30.5V33.5C53.5 39.3 48.8 44 43 44H36V20Z" fill="white"/>
+  <path d="M43 27.5C45.5 27.5 47.5 29.5 47.5 32C47.5 34.5 45.5 36.5 43 36.5H41V27.5H43Z" fill="#090A0D"/>
+  <text x="76" y="31" fill="white" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900" letter-spacing=".5">DORSE</text>
+  <text x="77" y="47" fill="#8E96A8" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="800" letter-spacing="1.4">LEARNING STUDIO</text>
+</svg>

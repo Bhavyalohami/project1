@@ -1,0 +1,11 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" rx="42" fill="#0D0F16"/>
+  <rect x="82" y="90" width="556" height="340" rx="34" fill="#171B27" stroke="#30384B" stroke-width="2"/>
+  <path d="M132 165L360 300L588 165" stroke="#D6FF32" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132 365L274 254" stroke="#FF3DF2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M588 365L446 254" stroke="#FF3DF2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="146" cy="158" r="18" fill="#D6FF32"/>
+  <circle cx="574" cy="158" r="18" fill="#D6FF32"/>
+  <circle cx="360" cy="300" r="24" fill="#FF3DF2"/>
+  <text x="208" y="412" fill="#F7F7F2" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="900">PLACEMENT CALL</text>
+</svg>

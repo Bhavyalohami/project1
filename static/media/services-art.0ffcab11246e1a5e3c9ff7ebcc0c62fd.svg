@@ -1,0 +1,20 @@
+<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="520" rx="42" fill="#0A0B10"/>
+  <rect x="80" y="70" width="740" height="380" rx="34" fill="#151823" stroke="#32394A" stroke-width="2"/>
+  <rect x="122" y="118" width="300" height="74" rx="18" fill="#202635"/>
+  <rect x="122" y="220" width="300" height="74" rx="18" fill="#202635"/>
+  <rect x="122" y="322" width="300" height="74" rx="18" fill="#202635"/>
+  <rect x="500" y="118" width="260" height="278" rx="28" fill="#0F1118" stroke="#D6FF32" stroke-width="3"/>
+  <path d="M548 314C570 252 606 220 657 220C708 220 740 252 752 314C716 342 681 356 647 356C609 356 576 342 548 314Z" fill="#EAFDFA"/>
+  <path d="M570 300C589 280 615 270 647 270C681 270 707 280 727 300C707 318 681 327 647 327C613 327 587 318 570 300Z" fill="#090A0D"/>
+  <g fill="#D6FF32">
+    <circle cx="160" cy="155" r="14"/>
+    <circle cx="160" cy="257" r="14"/>
+    <circle cx="160" cy="359" r="14"/>
+  </g>
+  <g fill="#F7F7F2" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="26">
+    <text x="196" y="164">CODE REVIEW</text>
+    <text x="196" y="266">QUERY DESK</text>
+    <text x="196" y="368">DEMO ROOM</text>
+  </g>
+</svg>

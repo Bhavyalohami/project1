@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/project1/static/css/main.a9bf1575.css",
+    "main.js": "/project1/static/js/main.afafaaf2.js",
+    "static/media/1.png": "/project1/static/media/1.9741230b4b4fe8213efa.png",
+    "static/media/4.jpg": "/project1/static/media/4.9bae92981bff135650c7.jpg",
+    "static/media/2.webp": "/project1/static/media/2.f9561efff3bd3330d3b9.webp",
+    "static/media/dorse-hero.svg": "/project1/static/media/dorse-hero.caa9499517c86d642b40623a4dfdd503.svg",
+    "static/media/services-art.svg": "/project1/static/media/services-art.0ffcab11246e1a5e3c9ff7ebcc0c62fd.svg",
+    "static/media/showcase-art.svg": "/project1/static/media/showcase-art.9a1baa6a5794377629f593dff4d40421.svg",
+    "static/media/dorse-logo.svg": "/project1/static/media/dorse-logo.2ff4d03cc96f5b52017d1e87087ac26d.svg",
+    "static/media/pricing-art.svg": "/project1/static/media/pricing-art.8c73329db5c649833f849490905e3a60.svg",
+    "static/media/programs-art.svg": "/project1/static/media/programs-art.3fb95f8c3873db4034613167b3a15350.svg",
+    "static/media/resources-art.svg": "/project1/static/media/resources-art.56e203b64c51dc32fdbbfba8da6d20c4.svg",
+    "static/media/outcomes-art.svg": "/project1/static/media/outcomes-art.5235aecba2e093222791510526617c15.svg",
+    "static/media/contact-art.svg": "/project1/static/media/contact-art.b7e9c5624833b612db6397888f6b3c43.svg",
+    "index.html": "/project1/index.html",
+    "main.a9bf1575.css.map": "/project1/static/css/main.a9bf1575.css.map",
+    "main.afafaaf2.js.map": "/project1/static/js/main.afafaaf2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9bf1575.css",
+    "static/js/main.afafaaf2.js"
+  ]
+}
